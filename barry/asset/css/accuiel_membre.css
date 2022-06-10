@@ -1,0 +1,16 @@
+#ligne{
+    border-style: solid;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+}
+.cle{
+    margin-left: 5px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+ }
+
+
