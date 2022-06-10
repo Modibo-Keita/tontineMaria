@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'ajout d'un membre</title>
+   <!-- css bootstrap -->
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <!-- JavaScript Bundle bootstrap -->
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- mon css -->
+</head>
+<body>
+    <section class="mainPage"> <!--le conteneur principal de la page-->
+        <!-- le bouton du modal -->
+            <button type="button" class="btn-ajout" data-bs-toggle="modal" data-bs-target="#mymodal">Ajouter un membre</button>
+            <!-- le début du modal -->
+            <div class="modal modal-lg" id="mymodal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">AJOUT D'UN MEMBRE</h5>
+                            <button type="button" class="close" data-bs-dismiss="modal">×</button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form class="row">
+                                <span class="col-md-6">
+                                    <div class="form-group">
+                                    <label for="nom">Nom</label>
+                                    <input type="nom" required="required" class="form-control" id="nom" placeholder="Entrez le nom">
+                                </div>
+                                <div class="form-group">
+                                    <label for="prenom">Prenom</label>
+                                    <input type="prenom" required="required" class="form-control" id="prenom" placeholder="Entrez le prenom">
+                                </div>
+                                <div class="form-group">
+                                    <label for="tel">Telephone</label>
+                                    <input type="tel" required="required" class="form-control" id="tel" placeholder="Entrez le numero de telephone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="bank">Compte Bancaire</label>
+                                    <input type="bank" required="required" class="form-control" id="bank" placeholder="Entrez le numero du compte bancaire">
+                                </div>
+                                </span>
+                                <span class="col-md-6">
+                                    <div class="form-group">
+                                    <label for="job">Profession</label>
+                                    <input type="job" required="required" class="form-control" id="job" placeholder="Entrez la Profession">
+                                </div>
+                                <div class="form-group">
+                                    <label for="civil">Etat-civil</label>
+                                    <input type="civil" required="required" class="form-control" id="civil" placeholder="Entrez le statut matrimonial">
+                                </div>
+                                <div class="form-group">
+                                    <label for="mail">Email</label>
+                                    <input type="mail" required="required" class="form-control" id="mail" placeholder="Entrez l'adresse mail">
+                                </div>
+                                <div class="form-group">
+                                    <label for="adresse">Adresse</label>
+                                    <input type="adresse" required="required" class="form-control" id="adresse" placeholder="Entrez l'adresse">
+                                </div>
+                                </span> 
+                                <div class="modal-footer pied-modal justify-content-around mt-3">
+                                    <button class="btn-iscription" type="reset" data-dismiss="modal" >Annuller</button>
+                                    <button class="btn-iscription" type="submit"> Soumettre</button>
+                                </div>   
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin du modal -->
+    </section>
+</body>
+</html>
