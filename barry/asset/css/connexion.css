@@ -1,0 +1,12 @@
+
+.col-md-2{
+    float: none;
+    margin: 0 auto;
+}
+fieldset.scheduler-border {
+    border: 5px solid white ;
+    /* padding: 1px; */
+    margin: 50px;
+    
+
+    }
