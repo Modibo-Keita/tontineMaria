@@ -10,6 +10,14 @@ div a {
     text-decoration: none;
     color: black;
 }
-.leftInside {
+.leftSide {
     background-color: #81AAC1;
+    display: flex;
+    justify-content: center;
+}
+.leftInside {
+    
+}
+.navContent {
+    font-size: 2em;
 }
