@@ -1,0 +1,29 @@
+fieldset{
+    height:300px ;
+    width: 800px ;
+    margin-left: 250px;
+    border: 3px solid blue;
+}
+h1{
+    text-align: center;
+    border: blue solid ;
+    color: blue;
+}
+.gauche{
+    margin-left: 500px;
+    margin-top: -120px;
+}
+.droite{
+    margin-left: 100px;
+}
+.envoie{
+    margin-left: 550px;
+    margin-top: 20px;
+    background-color: blue;
+    border: 2px solid blue;
+}
+.annul{
+    background-color: yellow;
+    border: 2px solid yellow;
+    margin-left: 30px;
+}
