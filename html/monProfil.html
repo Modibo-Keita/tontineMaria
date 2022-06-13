@@ -39,7 +39,7 @@
                         <h6>Applications</h6>
                         <div class="navContent">
                             <div class="dropdown dropend">
-                                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="ton">Tontines</button>
+                                <button class="btn btn-primary mb-2 dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="ton">Tontines</button>
                             <ul class="dropdown-menu" id="ton">
                                 <li><a class="dropdown-item" href="#">Creer une tontine</a></li>
                                 <li><a class="dropdown-item" href="#">Liste de mes tontines</a></li>
@@ -47,7 +47,7 @@
                             </div>
                             
                             <div class="dropdown dropend">
-                                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#user">Participants</button>
+                                <button class="btn btn-primary mb-2 dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#user">Participants</button>
                                 <ul class="dropdown-menu" id="user">
                                     <li><a class="dropdown-item" href="#">Ajouter un nouvel participant</a></li>
                                     <li><a class="dropdown-item" href="#">Liste des participants</a></li>
@@ -55,7 +55,7 @@
                             </div>
                             
                             <div class="dropdown dropend">
-                                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#cot">Cotisations</button> 
+                                <button class="btn btn-primary mb-2 dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#cot">Cotisations</button> 
                                 <ul class="dropdown-menu" id="cot">
                                     <li><a class="dropdown-item" href="#">Enregistrer une cotisation</a></li>
                                     <li><a class="dropdown-item" href="#">Voir l'historique des paiements</a></li>
@@ -63,7 +63,7 @@
                             </div>
 
                             <div class="dropdown dropend">
-                                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#meet">Reunions</button>
+                                <button class="btn btn-primary mb-2 dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#meet">Reunions</button>
                                 <ul class="dropdown-menu" id="meet">
                                     <li><a class="dropdown-item" href="#">Programmer une reunion</a></li>
                                     <li><a class="dropdown-item" href="#">Voir la liste des reunions prevues</a></li>
@@ -165,9 +165,9 @@
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content">
                                             <!-- Modal Header -->
-                                            <div class="modal-header">
+                                            <div class="modal-header bg-primary">
                                                 <h5 class="modal-title">Modification des infos du profil</h5>
-                                                <button type="button" class="close" data-bs-dismiss="modal">×</button>
+                                                <button type="button" class="close h3 rounded-3" data-bs-dismiss="modal">×</button>
                                             </div>
                                             <!-- Modal body -->
                                             <div class="modal-body">
@@ -209,8 +209,8 @@
                                                     </div>
                                                     </span> 
                                                     <div class="modal-footer pied-modal justify-content-around mt-3">
-                                                        <button class="btn-iscription" type="reset" data-dismiss="modal" >Annuller</button>
-                                                        <button class="btn-iscription" type="submit"> Enregistrer</button>
+                                                        <button class=" border-0 bg-danger rounded-3 text-white" type="reset">Annuller</button>
+                                                        <button class=" border-0 bg-success rounded-3 text-white" type="submit"> Enregistrer</button>
                                                     </div>   
                                                 </form>
                                             </div>
@@ -227,10 +227,10 @@
                                         <!-- Modal Header -->
                                         <div class="modal-header bg-primary">
                                             <h5 class="modal-title">Changer mon mot de passe</h5>
-                                            <button type="button" class="close" data-bs-dismiss="modal">×</button>
+                                            <button type="button" class="close h3 rounded-3" data-bs-dismiss="modal">×</button>
                                         </div>
                                         <!-- Modal body -->
-                                        <div class="modal-body bg-secondary ">
+                                        <div class="modal-body">
                                             <form class="row">
                                                 <span class="col-md-6">
                                                     <div class="form-group">
@@ -246,10 +246,10 @@
                                                     <input type="tel" required="required" class="form-control" id="tel" placeholder="Confirmer le mot de passe ">
                                                 </div>
                                                 </span>
-                                                <span class="col-md-6 bg-primary"></span>
+                                                <span class="col-md-6 bg-body"></span>
                                                 <div class="modal-footer bg-alert justify-content-around mt-3">
-                                                    <button class="btn-iscription" type="reset" data-dismiss="modal" >Annuller</button>
-                                                    <button class="btn-iscription" type="submit"> Enregistrer</button>
+                                                    <button class="border-0 bg-danger rounded-3 text-white" type="reset" data-dismiss="modal" >Annuller</button>
+                                                    <button class="border-0 bg-success rounded-3 text-white" type="submit"> Enregistrer</button>
                                                 </div>   
                                             </form>
                                         </div>
@@ -257,7 +257,7 @@
                                 </div>
                             </div>
                             <!-- fin du modal modifier profil -->
-                            <h4> <button type="button" class="btn-ajout bg-primary bg-primary rounded-2 ms-5 border-0">Supprimer mon compte</button> </h4>
+                            <h4> <button type="button" class="btn-ajout bg-danger bg-warning rounded-2 ms-5 mb-4 border-0">Supprimer mon compte</button> </h4>
                         </div>
                     </div>
                 </main>
