@@ -1,0 +1,10 @@
+/* la partie css de ajouter des logements */
+.modal-header{
+    background-color: rgb(13, 11, 112);
+    padding-left: 20%;
+    color: white;
+}
+.modal-title{
+    font-size: 20px;
+}
+

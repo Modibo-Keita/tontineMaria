@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon profil infos</title>
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <!-- JavaScript Bundle bootstrap -->
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- mon css -->
+    <link rel="stylesheet" href="../css/accueil.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <section class="row">
+            <section class="leftSide col-md-3">
+                <!-- <div class="leftInside h-100"> -->
+                    <div class="logo">
+                        <h1>MariaTontine</h1>
+                        <img class="rounded-pill" src="../assets/logos.png" alt="logo" width="100px" height="100px">
+                        <hr>
+                    </div>
+                    <div class="selection">
+                        <form action="phpform.php" method="post">
+                            <label for="choix">Selectionner Tontine</label> <br>
+                            <select name="choix" id="choix">
+                                <option value="1" selected>---</option>
+                                <option value="2">Muso ni Mara</option>
+                                <option value="3">Ben Kadi</option>
+                                <option value="4">KeleyaTon</option>
+                                <option value="4">Sini Niesigi</option>
+                            </select>
+                        </form>
+                        <hr>
+                    </div>
+                    <div class="appli">
+                        <h6>Applications</h6>
+                        <div class="navContent">
+                            <div class="dropdown dropend">
+                                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="ton">Tontines</button>
+                            <ul class="dropdown-menu" id="ton">
+                                <li><a class="dropdown-item" href="#">Creer une tontine</a></li>
+                                <li><a class="dropdown-item" href="#">Liste de mes tontines</a></li>
+                            </ul>
+                            </div>
+                            
+                            <div class="dropdown dropend">
+                                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#user">Participants</button>
+                                <ul class="dropdown-menu" id="user">
+                                    <li><a class="dropdown-item" href="#">Ajouter un nouvel participant</a></li>
+                                    <li><a class="dropdown-item" href="#">Liste des participants</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="dropdown dropend">
+                                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#cot">Cotisations</button> 
+                                <ul class="dropdown-menu" id="cot">
+                                    <li><a class="dropdown-item" href="#">Enregistrer une cotisation</a></li>
+                                    <li><a class="dropdown-item" href="#">Voir l'historique des paiements</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown dropend">
+                                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#meet">Reunions</button>
+                                <ul class="dropdown-menu" id="meet">
+                                    <li><a class="dropdown-item" href="#">Programmer une reunion</a></li>
+                                    <li><a class="dropdown-item" href="#">Voir la liste des reunions prevues</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown dropend">
+                                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#new"> Nouvelles</button> 
+                            <ul class="dropdown-menu" id="new">
+                                <li><a class="dropdown-item" href="#">Publier une nouvelle</a></li>
+                                <li><a class="dropdown-item" href="#">Consulter les nouvelles</a></li>
+                            </ul>
+                            </div>   
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="navig">
+                        <h6>Navigations</h6>
+                        <div>
+                            <a href="#" class="">Mon compte</a> <br>
+                            <a href="#" class="">Mes tontines</a> <br>
+                            <a href="#" class="">Parametres</a> <br>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </section>
+            <section class="rightSide col-md-9">
+                <header class="mainHeader">
+                <nav class="navbar navbar-expand-md bg-primary navbar-light">
+                    <div class="container-fluid">
+                        <h6 class="navbar-text text-uppercase fw-bold ms-3"><span class="bg-primary p-1 rounded-3 text-light">Tontine </span>Ben-Kadi</h6>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse d-md-flex justify-content-md-around" id="navbarContent">
+                            <a href="#" class="nav-link active" title="Allez vers la page admin">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi    bi-key-fill" viewBox="0 0 16 16">
+                                    <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="nav-link" title="Voir les nothifications">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                                </svg>
+                            </a>
+                            <div>                    
+                            <ul class="navbar-nav ms-auto">
+                                <h3 class="me-2 text-light">Modibo Keita</h3>
+                                <li class="nav-item dropdown">
+                                        <button type="button" class="btn btn-light ms-3 dropdown" data-bs-toggle="dropdown">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                            </svg>
+                                        </button>
+                                    <!-- </a> -->
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">
+                                            <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                            </svg>
+                                        </span> Mon profil</a></li>
+                                        <li><a class="dropdown-item" href="#"> 
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                                                    <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                                                </svg>
+                                            </span> Deconnexion</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                </header> <!--fin de l'entete de la page-->
+                <!-- debut du contenu -->
+                <main class="mainContent h-75 my-2 d-flex justify-content-center align-items-center">
+                    <img class="cercleProfil" src="../assets/logos.png" alt="">
+                    <div class="cadre bg-white h-auto">
+                        <div class="barre" style="border: 2px solid;"> 
+                        <img src="../assets/images/bgprofil.jpg" width="100%" height="150px" alt="">
+                        </div>
+                        <!-- <div class="cercle"> -->
+                        
+                        <!-- </div> -->
+                        <div class="d-flex justify-content-between mt-4">
+                            <h5 class="mx-3">Modibo Keita</h5>
+                            <h5 class="mx-3">mkeitadilly@gmail.com</h5>
+                            <h5 class="mx-3">+223 79 20 93 37</h5>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h4> <button type="button" class="btn-ajout bg-primary rounded-2 ms-5 mt-3 border-0" data-bs-toggle="modal" data-bs-target="#mymodal">Modifier mon profil</button></h4>
+                                <!-- le début du modal -->
+                                <div class="modal modal-lg" id="mymodal" data-bs-backdrop="static" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Modification des infos du profil</h5>
+                                                <button type="button" class="close" data-bs-dismiss="modal">×</button>
+                                            </div>
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <form class="row">
+                                                    <span class="col-md-6">
+                                                        <div class="form-group">
+                                                        <label for="nom">Nom</label>
+                                                        <input type="nom" required="required" class="form-control" id="nom" placeholder="Entrez le nom">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="prenom">Prenom</label>
+                                                        <input type="prenom" required="required" class="form-control" id="prenom" placeholder="Entrez le prenom">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="tel">Telephone</label>
+                                                        <input type="tel" required="required" class="form-control" id="tel" placeholder="Entrez le numero de telephone">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="bank">Compte Bancaire</label>
+                                                        <input type="bank" required="required" class="form-control" id="bank" placeholder="Entrez le numero du compte bancaire">
+                                                    </div>
+                                                    </span>
+                                                    <span class="col-md-6">
+                                                        <div class="form-group">
+                                                        <label for="job">Profession</label>
+                                                        <input type="job" required="required" class="form-control" id="job" placeholder="Entrez la Profession">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="civil">Etat-civil</label>
+                                                        <input type="civil" required="required" class="form-control" id="civil" placeholder="Entrez le statut matrimonial">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="mail">Email</label>
+                                                        <input type="mail" required="required" class="form-control" id="mail" placeholder="Entrez l'adresse mail">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="adresse">Adresse</label>
+                                                        <input type="adresse" required="required" class="form-control" id="adresse" placeholder="Entrez l'adresse">
+                                                    </div>
+                                                    </span> 
+                                                    <div class="modal-footer pied-modal justify-content-around mt-3">
+                                                        <button class="btn-iscription" type="reset" data-dismiss="modal" >Annuller</button>
+                                                        <button class="btn-iscription" type="submit"> Enregistrer</button>
+                                                    </div>   
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- fin du modal modifier profil -->
+                            <h4><button type="button" class="btn-ajout bg-primary rounded-2 ms-5 border-0" data-bs-toggle="modal" data-bs-target="#mymodal1">Changer mon mot de passe</button></h4>
+                            
+                            <!-- le début du modal -->
+                            <div class="modal modal" id="mymodal1" data-bs-backdrop="static" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <!-- Modal Header -->
+                                        <div class="modal-header bg-primary">
+                                            <h5 class="modal-title">Changer mon mot de passe</h5>
+                                            <button type="button" class="close" data-bs-dismiss="modal">×</button>
+                                        </div>
+                                        <!-- Modal body -->
+                                        <div class="modal-body bg-secondary ">
+                                            <form class="row">
+                                                <span class="col-md-6">
+                                                    <div class="form-group">
+                                                    <label for="nom">Ancien mot de passe</label>
+                                                    <input type="nom" required="required" class="form-control" id="nom" placeholder="Entrez l'ancien mot de passe">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="prenom">Nouvau mot de passe</label>
+                                                    <input type="prenom" required="required" class="form-control" id="prenom" placeholder="Entrez le nouvau mot de passe">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="tel">Confirmer le mot de passe</label>
+                                                    <input type="tel" required="required" class="form-control" id="tel" placeholder="Confirmer le mot de passe ">
+                                                </div>
+                                                </span>
+                                                <span class="col-md-6 bg-primary"></span>
+                                                <div class="modal-footer bg-alert justify-content-around mt-3">
+                                                    <button class="btn-iscription" type="reset" data-dismiss="modal" >Annuller</button>
+                                                    <button class="btn-iscription" type="submit"> Enregistrer</button>
+                                                </div>   
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- fin du modal modifier profil -->
+                            <h4> <button type="button" class="btn-ajout bg-primary bg-primary rounded-2 ms-5 border-0">Supprimer mon compte</button> </h4>
+                        </div>
+                    </div>
+                </main>
+                <!-- fin du contenu -->
+                <footer class="mainFooter bg-primary h-auto d-flex justify-content-between mb-0">
+                    <p class="m-4">©️ Copyright 2022</p>
+                    <p class="m-4">Maria'S Tontine</p>  
+                </footer>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
