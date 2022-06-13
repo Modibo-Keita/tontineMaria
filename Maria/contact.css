@@ -1,0 +1,44 @@
+body{
+    width: 100%;
+    border: 2px solid #1745BE;
+    border-radius: 10px 10px 10px 10px;
+}
+.gauche{
+    border: solid 2px blue;
+    border-radius: 10px 10px 10px 10px;
+    background: blue;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    width: 20%;
+    height: 300px;
+}
+
+.droite{
+    border: solid 2px blue;
+    color: #1745BE;
+    width: 20%;
+    border-radius: 10px 10px 10px 10px;
+    height: 300px;
+    text-align: center;
+}
+.tout{
+    display: flex;
+    margin-top: 200Px;
+}
+div.tout div.droite{
+    margin-left: 200px;
+}
+
+div.tout div.gauche{
+    margin-left: 600px;
+}
+#envoyer{
+    background: blue;
+    color: wheat;
+    text-align: center;
+    cursor: pointer;
+}
+#envoyer:hover{
+    background-color: cornflowerblue;
+}

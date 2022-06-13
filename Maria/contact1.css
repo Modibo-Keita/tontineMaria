@@ -1,0 +1,35 @@
+body{
+    width: 90%;
+    height: 100%;
+    border: 2px solid #1745BE;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.droite{
+  margin-left: 60px;  
+  border-radius: 10px 10px 10px 10px;
+text-align: center;
+color: #1745BE;
+}
+
+.gauche{
+    background: #1745BE;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    margin-left: 150px;
+}
+
+#envoyer{
+    background: #1745BE;
+    cursor: pointer;
+}
+#envoyer:hover{
+    background: cornflowerblue;
+}
+
+.bas{
+    margin-top: 100px;
+    text-align: center;
+}

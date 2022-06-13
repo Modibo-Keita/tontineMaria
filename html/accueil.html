@@ -14,8 +14,8 @@
 </head>
 <body>
     <section class="row container-fluid">
-        <section class="leftSide col-md-4">
-            <div class="leftInside">
+        <section class="leftSide col-md-3">
+            <!-- <div class="leftInside"> -->
                 <div class="logo">
                     <h1>MariaTontine</h1>
                     <img class="rounded-pill" src="../assets/logos.png" alt="logo" width="100px" height="100px">
@@ -37,44 +37,83 @@
                 <div class="appli">
                     <h6>Applications</h6>
                     <div class="navContent">
-                        <div>
-                            <button class="btn btn-primary dropdown" data-bs-toggle="dropdown" data-bs-target="ton">Tontines</button>
+                        <div class="dropdown dropend">
+                            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="ton">Tontines</button>
                         <ul class="dropdown-menu" id="ton">
-                            <li><a class="dropdown-item" href="#">Creer une tontine</a></li>
-                            <li><a class="dropdown-item" href="#">Liste de mes tontines</a></li>
+                            <!-- <li><a class="dropdown-item" href="../barry/groupe_tontine.html">Creer une tontine</a></li> -->
+                            <li><a class="dropdown-item" href="../barry/groupe_tontine.html">Liste de mes tontines</a></li>
                         </ul>
                         </div>
                         
-                        <div>
-                            <button class="btn btn-primary dropdown" data-bs-toggle="dropdown" data-bs-target="#user">Participants</button>
+                        <div class="dropdown dropend">
+                            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#user">Participants</button>
                             <ul class="dropdown-menu" id="user">
-                                <li><a class="dropdown-item" href="#">Ajouter un nouvel participant</a></li>
-                                <li><a class="dropdown-item" href="#">Liste des participants</a></li>
+                                <li><a class="dropdown-item" href="../barry/ajouter_participant.html">Ajouter un nouvel participant</a></li>
+                                <li><a class="dropdown-item" href="../Maria/list_participant.html">Liste des participants</a></li>
                             </ul>
                         </div>
                         
-                        <div>
-                            <button class="btn btn-primary dropdown" data-bs-toggle="dropdown" data-bs-target="#cot">Cotisations</button> 
+                        <div class="dropdown dropend">
+                            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#cot">Cotisations</button> 
                             <ul class="dropdown-menu" id="cot">
-                                <li><a class="dropdown-item" href="#">Enregistrer une cotisation</a></li>
-                                <li><a class="dropdown-item" href="#">Voir l'historique des paiements</a></li>
+                                <!-- <li><a class="dropdown-item" href="#">Enregistrer une cotisation</a></li> -->
+                                <li><a class="dropdown-item" href="../barry/lis_cotisation.html">Voir l'historique des versements</a></li>
                             </ul>
                         </div>
 
-                        <div>
-                            <button class="btn btn-primary dropdown" data-bs-toggle="dropdown" data-bs-target="#meet">Reunions</button>
+                        <div class="dropdown dropend">
+                            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#meet">Reunions</button>
                             <ul class="dropdown-menu" id="meet">
-                                <li><a class="dropdown-item" href="#">Programmer une reunion</a></li>
-                                <li><a class="dropdown-item" href="#">Voir la liste des reunions prevues</a></li>
-                            </ul>
+                                <!-- <li><button type="button" class="dropdown-item btn-ajout" data-bs-toggle="modal" data-bs-target="#mymodal">Ajouter une nouvelle</button></li> -->
+                                <li><a class="dropdown-item" href="../Maria/reunion.html">Programmer une reunion</a></li>
+                                <li><a class="dropdown-item" href="../Maria/reunion.html">Voir le liste des reunions prevues</a></li>
+                            </ul>         
                         </div>
-
-                        <div>
-                            <button class="btn btn-primary dropdown dropdown-menu-end" data-bs-toggle="dropdown" data-bs-target="#new"> Nouvelles</button> 
+                        <div class="dropdown dropend">
+                            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#new"> Nouvelles</button> 
                         <ul class="dropdown-menu" id="new">
-                            <li><a class="dropdown-item" href="#">Publier une nouvelle</a></li>
-                            <li><a class="dropdown-item" href="#">Consulter les nouvelles</a></li>
+                            <li><button type="button" class="dropdown-item btn-ajout" data-bs-toggle="modal" data-bs-target="#mymodal">Ajouter une nouvelle</button></li>
+                            <!-- <li><a class="dropdown-item" href="#">Publier une nouvelle</a></li> -->
+                            <!-- <li><a class="dropdown-item" href="#">Consulter les nouvelles</a></li> -->
                         </ul>
+                            <!-- le début du modal -->
+                            <div class="modal modal-lg fade" id="mymodal" data-bs-backdrop="static" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">AJOUT D'UNE NOUVELLE</h5>
+                                            <button type="button" class="close" data-bs-dismiss="modal">×</button>
+                                        </div>
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="titre">Titre</label>
+                                                    <input type="titre" required="required" class="form-control" id="titre" placeholder="Saississez le titre de la nouvelle">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="objet">Objet</label>
+                                                    <input type="objet" required="required" class="form-control" id="objet" placeholder="Saississez l'objet">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="date">Date</label>
+                                                    <input type="date" required="required" class="form-control" id="date" placeholder="Entrez la date">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="description">Description</label>
+                                                    <input type="description" required="required" class="form-control" id="description" placeholder="Ajouter une description">
+                                                </div>
+                                                <div class="modal-footer pied-modal justify-content-around">
+                                                    <button class="btn-iscription" type="reset" data-dismiss="modal" >Annuller</button>
+                                                    <button class="btn-iscription" type="submit"> Soumettre</button>
+                                                </div>  
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- fin du modal -->
                         </div>   
                     </div>
                 </div>
@@ -87,9 +126,9 @@
                         <a href="#" class="">Parametres</a> <br>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </section>
-        <section class="rightSide col-md-8">
+        <section class="rightSide col-md-9">
             <header class="mainHeader">
             <nav class="navbar navbar-expand-md bg-primary navbar-light">
                 <div class="container-fluid">
@@ -143,7 +182,7 @@
             </nav>
         </header> <!--fin de l'entete de la page-->
         <!-- Debut Carousel -->
-  <div id="demo" class="carousel slide mt-3" data-bs-ride="carousel">
+  <div id="demo" class="carousel slide my-3" data-bs-ride="carousel">
   <!-- Les points d'indicateurs de carrousel -->
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
@@ -176,9 +215,9 @@
   </button>
   </div>
   <!--fin carrousel-->
-            <footer class="mainFooter">
-                <p>©️ Copyright 2022</p>
-                <p>Maria'S Tontine</p>  
+            <footer class="mainFooter bg-primary h-auto d-flex justify-content-between mb-0">
+                <p class="m-4">©️ Copyright 2022</p>
+                <p class="m-4">Maria'S Tontine</p>  
             </footer>
         </section>
     </section>
