@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,11 +17,11 @@
                                 <h1 style="color: blue;" class="text-center border border-primary">Ajouter participant</h1>
                                 <div class="row">
                                         <div class="col-md-6">
-                                                <label for="">Nom</label>
+                                                <label for="">nom</label>
                                                 <input class="form-control" name="nom" type="text">
                                         </div>
                                         <div class="col-md-6">
-                                                <label for="">Prenom</label>
+                                                <label for="">prenom</label>
                                                 <input class="form-control" name="prenom" type="text">
                                         </div>
                                         <!-- <div class="col-md-3">
