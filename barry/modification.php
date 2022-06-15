@@ -1,37 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../">
-  <title>Document</title>
-</head>
-<body>
-
-  
-</body>
-</html>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "maria_db";
+   include "connexion.php";
+    if (isset($_POST['modifier']))
+  { 
+      $nom = $_POST['nom'];
+      $prenom = $_POST['prenom'];
+      $adresse = $_POST['adresse'];
+      $telephone = $_POST['telephone'];
+      $compte_bancaire = $_POST['compte_bancaire'];
+      $mail = $_POST['mail'];
+    
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+    
+      // Create connection
+      $pour = new PDO("mysql:host=localhost;dbname=maria_db","root","");
+    
+      // Check connection
+      if ($pour->connect_error) 
+       { 
+        die("Connection failed: " . $pour->ATTR_ERRMODE);
+       }
 
-$sql = "UPDATE participant SET nom='diarra' WHERE id_part=6";
+      $sql = "UPDATE participant SET nom='$nom', prenom='$prenom', adresse='$adresse',telephone='$telephone',compte_bancaire='$compte_bancaire', mail='$mail', WHERE nom=$nom";
 
-if ($conn->query($sql) === TRUE) {
-  echo "Mise à jour effectuée";
-} else {
-  echo "Error updating record: " . $conn->error;
-}
+      if ($pour->query($sql) === TRUE) 
+      {
+        echo "Mise à jour effectuée";
+      } 
+      else 
+      {
+        echo "Error updating record: " . $pour->error;
+      }
 
-$conn->close();
+      $pour->close();
+    }
 ?>

@@ -1,8 +1,10 @@
 <?php
 $servername = "localhost";
-$username = "daoumari";
-$password = "M@richou123";
-$dbname = "brief";
+$username = "root";
+$password = "";
+$dbname = "maria_db";
+
+$id=$_GET['id'];
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -12,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 // sql to delete a record
-$sql = "DELETE FROM apprenants";
+$sql = "DELETE FROM participant where id_part=$id";
 
 if ($conn->query($sql) === TRUE) {
   echo "Suppression Reussie";

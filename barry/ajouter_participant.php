@@ -18,11 +18,11 @@
                                 <div class="row">
                                         <div class="col-md-6">
                                                 <label for="">nom</label>
-                                                <input class="form-control" name="nom" type="text">
+                                                <input required class="form-control" name="nom" type="text">
                                         </div>
                                         <div class="col-md-6">
                                                 <label for="">prenom</label>
-                                                <input class="form-control" name="prenom" type="text">
+                                                <input required class="form-control" name="prenom" type="text">
                                         </div>
                                         <!-- <div class="col-md-3">
                                                 <label for="">Age</label>
@@ -40,7 +40,7 @@
                                         </div> -->
                                         <div class="col-md-6">
                                                 <label for="">adresse</label>
-                                                <input class="form-control" name="adresse" type="text">
+                                                <input required class="form-control" name="adresse" type="text">
                                         </div>
                                         <!-- <div class="col-md-3">
                                                 <label for="">eta_civil</label>
@@ -48,7 +48,7 @@
                                         </div> -->
                                         <div class="col-md-6">
                                                 <label for="">telephone</label>
-                                                <input class="form-control" name="telephone" type="text">
+                                                <input required class="form-control" name="telephone" type="text">
                                         </div>
                                 </div>
 
@@ -63,7 +63,7 @@
                                 <input class="form-control" name="mail" type="text">
                                 </div>
                                 </div>
-                                <button style="background-color: yellow; margin-top: 20px;" class="card " type="submit">Annuler</button>
+                                <button style="background-color: yellow; margin-top: 20px;" class="card " type="reset">Annuler</button>
                                 <button style="background-color: blue ; margin-left: 950px;margin-top: -30px;" class="card" type="submit">envoyer</button>
                         </div>
   
